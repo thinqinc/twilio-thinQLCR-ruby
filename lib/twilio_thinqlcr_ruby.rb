@@ -28,7 +28,7 @@ module TwilioThinqlcrRuby
         end
 
         begin
-          @call = @client.account.calls.create({:to => "sip:#{to}@#{THINQ_DOMAIN}?:thinQid=#{@thinQ_id}&thinQtoken=#{@thinQ_token}",
+          @call = @client.account.calls.create({:to => "sip:#{to}@#{THINQ_DOMAIN}?thinQid=#{@thinQ_id}&thinQtoken=#{@thinQ_token}",
                                                 :from => from,
                                                 :url => TWIML_RESOURCE_URL})
           return  @call.sid
