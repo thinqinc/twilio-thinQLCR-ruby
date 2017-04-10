@@ -24,9 +24,13 @@ Or install it yourself as:
 
 From Console:
 irb
+
 require 'twilio_thinqlcr'
+
 require 'twilio-ruby'
+
 @test = TwilioThinqlcr::TwilioWrapper.new('*twilio_account_sid*', '*twilio_account_token*', '*thinQ_id*', '*thinQ_token*')
+
 @test.call('*FROM NUMBER*','*TO NUMBER*',['*Optional Custom TWIML Resource URL'])
 
 ## Development
