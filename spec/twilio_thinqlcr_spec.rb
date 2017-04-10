@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'twilio_thinqlcr/version'
 
 describe TwilioThinqlcr do
   it 'has a version number' do
