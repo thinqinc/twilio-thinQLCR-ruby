@@ -1,15 +1,15 @@
-# twilio-thinQLCR-ruby, Twilio Wrapper Ruby Library For thinQ LCR integration
+# twilio-thinQLCR, Twilio Wrapper Ruby Library For thinQ LCR integration
 
 ##**Note that you will need a valid LCR Account with thinQ before using the libraries. For more information please contact your thinQ Sales representative at [http://www.thinq.com/library/](http://www.thinq.com/library/)**
 
-#### *Copyright (c) 2016 thinQ*
+#### *Authored by thinQ, Inc 2017*
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'twilio_thinqlcr_ruby'
+gem 'twilio_thinqlcr'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install twilio_thinqlcr_ruby
+    $ gem install twilio_thinqlcr
 
 ## Usage
 

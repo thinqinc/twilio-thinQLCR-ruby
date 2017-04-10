@@ -1,12 +1,13 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'twilio_thinqlcr_ruby/version'
+require 'twilio_thinqlcr/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "twilio_thinqlcr_ruby"
-  spec.version       = TwilioThinqlcrRuby::VERSION
-  spec.email         = ["info@thinq.com"]
+  spec.name          = "twilio_thinqlcr"
+  spec.version       = TwilioThinqlcr::VERSION
+  spec.authors       = ["Ben Conley"]
+  spec.email         = ["ben@thinq.com"]
 
   spec.summary       = %q{Twilio Wrapper Ruby Library For thinQ LCR integration.}
   spec.description   = %q{Note that you will need a valid LCR Account with thinQ before using the libraries. For more information please contact your thinQ Sales representative at http://www.thinq.com/library/.}
@@ -14,13 +15,14 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  #spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.files         = spec.files = Dir['lib/**/*.rb']
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "twilio-ruby"
+  spec.add_dependency "twilio-ruby", "~>4.0"
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "rspec", "~> 0"
 end
