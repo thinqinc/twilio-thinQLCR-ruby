@@ -31,7 +31,7 @@ module TwilioThinqlcr
           @call = @client.account.calls.create({:to => "sip:#{to}@#{THINQ_DOMAIN}?thinQid=#{@thinQ_id}&thinQtoken=#{@thinQ_token}",
                                                 :from => from,
                                                 :url => @twiml_resource_url})
-          return  @call.sid
+          return  @call
         rescue Exception => e
           return e.message
         end
