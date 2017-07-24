@@ -3,7 +3,10 @@
 ##**Note that you will need a valid LCR Account with thinQ before using the libraries. For more information please contact your thinQ Sales representative at [http://www.thinq.com/library/](http://www.thinq.com/library/)**
 
 #### *Authored by thinQ, Inc 2017*
+#### Versioning Info
 
+  * twilio_thinlcr v1.0.3 - 2017/7/24 - works with twilio-ruby ~>5.0
+  * twilio_thinlcr v1.0.2 - 2017/4/13 - works with twilio-ruby ~>4.0
 ## Installation
 
 Add this line to your application's Gemfile:

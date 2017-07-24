@@ -17,7 +17,7 @@ module TwilioThinqlcr
     end
 
     def isClientValid?
-        !@client.nil? and !@client.account.nil?
+        !@client.nil? and !@client.accounts.nil?
     end
 
     def call(from, to, twiml_resource_url = nil)
@@ -28,7 +28,7 @@ module TwilioThinqlcr
 
         begin
           # :url => @twiml_resource_url,
-          @call = @client.account.calls.create({:to => "sip:#{to}@#{THINQ_DOMAIN}?thinQid=#{@thinQ_id}&thinQtoken=#{@thinQ_token}",
+          @call = @client.calls.create({:to => "sip:#{to}@#{THINQ_DOMAIN}?thinQid=#{@thinQ_id}&thinQtoken=#{@thinQ_token}",
                                                 :from => from,
                                                 :url => @twiml_resource_url})
           return  @call
